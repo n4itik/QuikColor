@@ -117,9 +117,8 @@ form {
     align-items: center;
   }
 
-  .color-preview {
-    height: 20px;
-    border-radius: 4px;
+  .copy-message {
+    background-color: #000;
   }
 
   .color {
@@ -127,7 +126,12 @@ form {
     gap: 0;
   }
 
-  .copy-message {
-    background-color: #000;
+  .color-preview {
+    height: 20px;
+    border-radius: 4px;
+  }
+
+  .color-code {
+    padding-top: 0.625em;
   }
 }
