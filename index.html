@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>QuikColor</title>
+    <meta name="title" content="QuikColor" />
+    <meta name="description" content="Color Scheme Generator" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://quikcolor.netlify.app" />
+    <meta property="og:title" content="QuikColor" />
+    <meta property="og:description" content="Color Scheme Generator" />
+    <meta
+      property="og:image"
+      content="https://quikcolor.netlify.app/assets/preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://quikcolor.netlify.app" />
+    <meta property="twitter:title" content="QuikColor" />
+    <meta property="twitter:description" content="Color Scheme Generator" />
+    <meta
+      property="twitter:image"
+      content="https://quikcolor.netlify.app/assets/preview.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="input-form">
+        <input
+          type="color"
+          name="color-input"
+          id="color-input"
+          value="#7ac9d0"
+        />
+        <select name="mode-input" id="mode-input">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome (Dark)</option>
+          <option value="monochrome-light">Monochrome (Light)</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic - Complement</option>
+          <option value="triad">Triad</option>
+          <option value="quad">Quad</option>
+        </select>
+        <button type="submit" id="submit-btn">Get color scheme</button>
+      </form>
+      <div class="color-container"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
